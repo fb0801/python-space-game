@@ -2,6 +2,7 @@ import pygame
 import time 
 import random
 
+pygame.font.init()
 
 WIDTH, HEIGHT, =900, 800
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -13,8 +14,13 @@ PLAYER_WIDTH = 40
 PLAYER_HEIGHT =  60
 PLAYER_VEL = 5
 
+FONT = pygame.font.SysFont('comicsans', 30)
+
 def draw(player, elapsed_time):
     WIN.blit(BG, (0,0))
+
+    time_text= FONT.render(f'Time:{round(elapsed_time)}s',1, 'white')
+    WIN.blit(time_text, (10,10))
 
     pygame.draw.rect(WIN, 'red', player)
     pygame.display.update()

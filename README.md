@@ -7,6 +7,8 @@ Making a game in python using Pygame by using the video by <a href="https://www.
 
 ## Issues:
 
+if using VSCode ensure the right interperter is chosen
+
 ## Changes made:
 
 ## Resources used:
