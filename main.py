@@ -28,6 +28,9 @@ def draw(player, elapsed_time, stars):
     WIN.blit(time_text, (10,10))
 
     pygame.draw.rect(WIN, 'red', player)
+
+    for star in stars:
+        pygame.draw.rect(WIN, 'white', star)
     pygame.display.update()
 
 def main():
